@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<h1 style="text-align: center;">Dog Adoption Application</h1>
+	<form id="dog-adoption-form" style="width: 50%; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;">
+		<!-- Name Field -->
+		<div style="margin-bottom: 15px;">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" placeholder="Name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+		</div>
+		
+		<!-- Phone Number Field -->
+		<div style="margin-bottom: 15px;">
+			<label for="phone">Phone Number:</label><br>
+			<input type="text" id="phone" name="phone" placeholder="Phone Number" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+		</div>
+		
+		<!-- Address Field -->
+		<div style="margin-bottom: 15px;">
+			<label for="address">Address:</label><br>
+			<input type="text" id="address" name="address" placeholder="Address" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;" required>
+		</div>
+		
+		<!-- Checkbox Field -->
+		<div style="margin-bottom: 15px;">
+			<input type="checkbox" id="checkbox" name="checkbox" value="Have you ever lived with a Dog before?">
+			<label for="checkbox">Have you ever lived with a Dog before?</label>
+		</div>
+		
+		<!-- Multi-Select Field -->
+		<div style="margin-bottom: 15px;">
+			<label for="multiSelect">Please select your preferred breeds:</label><br>
+			<select id="multiSelect" name="breeds" multiple style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+				<option value="labrador">Labrador</option>
+				<option value="german-shepherd">German Shepherd</option>
+				<option value="golden-retriever">Golden Retriever</option>
+				<option value="bulldog">Bulldog</option>
+				<option value="beagle">Beagle</option>
+			</select>
+		</div>
+		
+		<!-- Submit Button -->
+		<div style="text-align: center;">
+			<input type="submit" value="Submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+		</div>
+	</form>
 </body>
-
 </html>
