@@ -3,74 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Adoption Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
-        }
-        .form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        input[type="text"], select, input[type="checkbox"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        select {
-            padding: 8px;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            border-radius: 4px;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Dog Adoption Application</h2>
-        <form id="dogAdoptionForm">
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
-            <input type="text" id="address" name="address" placeholder="Address" required>
-            <input type="checkbox" id="checkbox" name="checkbox"> <label for="checkbox">Have you ever lived with a Dog before?</label>
-            
-            <select id="breeds" name="breeds" multiple required>
-                <option value="Labrador">Labrador</option>
-                <option value="Golden Retriever">Golden Retriever</option>
-                <option value="Bulldog">Bulldog</option>
-            </select>
-            
-            <input type="submit" id="submit" value="Submit">
-        </form>
-    </div>
-
-    <script>
-        // Optional JavaScript functionality can be added here
-    </script>
+	<from action="" method="get">
+		<!--name-->
+		<label for="name">Name</label>
+		<input id="name" type="text" placeholder="Name">
+		<br>
+		<!--Phone Number-->
+		<label for="phone">Phone Number</label>
+		<input id="phone" type="text" placeholder="Phone Number">
+		<br>
+		<!--Address-->
+		<label for="address">Address</label>
+		<input id="address" type="text" placeholder="Address">
+		<br>
+		<!--Chcekbox-->
+		<label for="checkbox">Have you ever lived with a Dog before?</label>
+		<input type="checkbox" id="chcekbox" value="Have you ever lived with a Dog before?">
+		<br>
+		<!--MultiSelect-->
+		<select id="multiselect" multiple>
+			<option>French Bulldog</option>
+			<option>Labrador Retriever</option>
+			<option>Golden Retriever</option>
+		</select>
+		<br>
+		<!--Submit-->
+		<button id="submit" type="submit" value="submit">Submit</button>
+	</from>
+    
 </body>
 </html>
